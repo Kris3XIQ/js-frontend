@@ -2,6 +2,8 @@
 
 ## 1: First of, clone the repo from GitHub:
 
+git clone https://github.com/Kris3XIQ/js-frontend.git
+
 ## 2: Head into the correct directory
 
 ## 3: Continue by installing the correct dependencies
