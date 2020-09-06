@@ -2,7 +2,7 @@
 
 ## 1: First of, clone the repo from GitHub:
 
-git clone -b 1.0.0 https://github.com/Kris3XIQ/js-frontend.git
+git clone ://github.com/Kris3XIQ/js-frontend.git
 
 ## 2: Head into the correct directory
 
