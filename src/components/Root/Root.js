@@ -8,6 +8,8 @@ import {
 import Home from "./Home";
 import Report from "./Report";
 import Nav from "./Nav";
+import Register from "./Account/Register";
+import Login from "./Account/Login";
 
 import '../../style/main.css';
 
@@ -18,8 +20,12 @@ const Root = () => {
                 <Nav />
                 <Switch>
                     <Route component={Home} exact path="/" />
+                    <Route component={Report} exact path="/reports" />
                     <Route component={Report} exact path="/reports/week" />
-                    <Route component={Report} path="/reports/week/:reportNr" />
+                    <Route component={Report} exact path="/reports/week/:reportNr" />
+                    <Route component={Login} exact path="/account" />
+                    <Route component={Register} exact path="/account/register" />
+                    <Route component={Login} exact path="/account/login" />
                 </Switch>
             </div>
         </Router>

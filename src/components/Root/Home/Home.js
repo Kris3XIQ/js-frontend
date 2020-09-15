@@ -1,22 +1,29 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Me from "../../../static/img/me.jpg";
 
 const Home = () => {
-  return (
-    <>
-        <div className="homepage-wrapper">
-            <div className="homepage-container">
-                <h1>Om mig</h1>
-                <div className="homepage-text-container">
-                    <p> Hej! Kristoffer heter jag och är en 27 åring från Stockholm. På sidan av studierna så brukar jag spendera en hel del tid framför burken med antingen design-relaterade program eller diverse spel med polarna. Utöver det så ser jag fram emot
-                        att få utöka mina kunskaper inom programmering nu under hösten!
+    const [text, setText] = useState("");
+
+    useEffect(() => {
+        fetch("http://localhost:3080/")
+        .then(res => res.json())
+        .then(res => setText(res.text))
+    })
+    return (
+        <>
+            <div className="homepage-wrapper">
+                <div className="homepage-container">
+                    <h1>Om mig</h1>
+                    <div className="homepage-text-container">
+                    <p>
+                        {text}
                     </p>
-                <img src={Me}></img>
+                    <img src={Me} alt="me"></img>
+                    </div>
                 </div>
             </div>
-        </div>
-    </>
-  );
-};
+        </>
+    );
+}
 
 export default Home;

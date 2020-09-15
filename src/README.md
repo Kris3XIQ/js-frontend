@@ -16,4 +16,20 @@ npm install
 
 npm start
 
-## 5: Open your web-browser at localhost:3000
+## 5: Clone the backend repo from GitHub into an empty folder
+
+git clone https://github.com/Kris3XIQ/js-backend.git
+
+## 6: Head into the correct directory
+
+cd js-backend
+
+## 7: Continue by installing the correct dependencies
+
+npm install
+
+## 8: Go ahead and start up the backend
+
+npm start
+
+## 9: Open your web-browser at localhost:3000
