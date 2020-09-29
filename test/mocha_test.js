@@ -42,7 +42,7 @@ test.describe("Me App", function() {
             .forBrowser("chrome")
             .build();
 
-        browser.get("http://localhost:8082/");
+        browser.get("https://me-react.kris3xiq-jsramverk.me/");
         done();
     });
 
