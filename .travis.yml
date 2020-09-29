@@ -12,7 +12,6 @@ git:
 
 before_script:
     - npm install
-    - npm install chromedriver --chromedriver-force-download
 
 script:
     - npm test
