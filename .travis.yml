@@ -2,6 +2,7 @@ language: node_js
 
 node_js:
     - "node"
+    - "11"
     - "10"
 
 sudo: false
@@ -11,7 +12,6 @@ git:
 
 before_script:
     - npm install
-    - npm start
 
 script:
-    - npm run test
+    - npm start & npm run test
