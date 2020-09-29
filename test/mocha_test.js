@@ -6,8 +6,7 @@
 const assert = require("assert");
 const test = require("selenium-webdriver/testing");
 const webdriver = require("selenium-webdriver");
-// const chrome = require("selenium-webdriver/chrome");
-const firefox = require("selenium-webdriver/firefox");
+const chrome = require("selenium-webdriver/chrome");
 const By = webdriver.By;
 
 let browser;
@@ -16,9 +15,9 @@ test.describe("Me App", function() {
     test.beforeEach(function(done) {
         this.timeout(0);
         browser = new webdriver.Builder().
-        withCapabilities(webdriver.Capabilities.firefox())
-            .setFirefoxOptions(new firefox.Options().headless())
-            .forBrowser("firefox")
+        withCapabilities(webdriver.Capabilities.chrome())
+            .setChromeOptions(new chrome.Options().headless())
+            .forBrowser("chrome")
             .build();
 
         browser.get("http://localhost:8082");
