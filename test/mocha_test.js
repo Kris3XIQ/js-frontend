@@ -37,10 +37,11 @@ test.describe("Me App", function() {
         this.timeout(10000);
 
         browser = new webdriver.Builder()
-        withCapabilities(webdriver.Capabilities.chrome())
+            .withCapabilities(webdriver.Capabilities.chrome())
             .setChromeOptions(new chrome.Options().headless())
             .forBrowser("chrome")
             .build();
+
         browser.get("http://localhost:8082/");
         done();
     });
