@@ -10,11 +10,8 @@ sudo: false
 git:
     submodules: false
 
-addons:
-  chrome: stable
-
 before_script:
     - npm install
 
 script:
-    - npm start & npm run test
+    - npm test
