@@ -40,3 +40,9 @@ npm start
 ## 10: Open your web-browser at localhost:3000
 
 https://travis-ci.org/Kris3XIQ/js-frontend.svg?branch=master
+
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Kris3XIQ/js-frontend/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/Kris3XIQ/js-frontend/?branch=master)
+
+[![Code Coverage](https://scrutinizer-ci.com/g/Kris3XIQ/js-frontend/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/Kris3XIQ/js-frontend/?branch=master)
+
+[![Build Status](https://scrutinizer-ci.com/g/Kris3XIQ/js-frontend/badges/build.png?b=master)](https://scrutinizer-ci.com/g/Kris3XIQ/js-frontend/build-status/master)
