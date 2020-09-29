@@ -10,7 +10,8 @@ const register = async details => {
             "password": details.password
         })
     };
-    const apiCall = await fetch(`http://localhost:3080/account/register`, fetchOptions);
+    // const apiCall = await fetch(`http://localhost:3080/account/register`, fetchOptions);
+    const apiCall = await fetch(`https://me-api.kris3xiq-jsramverk.me/account/register`, fetchOptions);
     const res = await apiCall.json();
     return res;
 }

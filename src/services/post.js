@@ -14,7 +14,8 @@ const post = async content => {
             "path": content.path
         })
     };
-    const apiCall = await fetch(`http://localhost:3080/reports/week/${content.path}`, fetchOptions);
+    // const apiCall = await fetch(`http://localhost:3080/reports/week/${content.path}`, fetchOptions);
+    const apiCall = await fetch(`https://me-api.kris3xiq-jsramverk.me/reports/week/${content.path}`, fetchOptions);
     const res = await apiCall.json();
     return res;
 }

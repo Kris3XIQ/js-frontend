@@ -25,7 +25,8 @@ const Report = ({ match }) => {
         const fetchOptions = {
             headers: { Authorization: token }
         };
-        const apiCall = await fetch(`http://localhost:3080/reports`, fetchOptions);
+        // const apiCall = await fetch(`http://localhost:3080/reports`, fetchOptions);
+        const apiCall = await fetch(`https://me-api.kris3xiq-jsramverk.me/reports`, fetchOptions);
         const res = await apiCall.json();
 
         setReportContent(res.data);
@@ -43,7 +44,8 @@ const Report = ({ match }) => {
             })
             .catch((error) => console.error(error));
         } else {
-            const apiCall = await fetch(`http://localhost:3080/reports/week/${kmom.reportNr}`);
+            // const apiCall = await fetch(`http://localhost:3080/reports/week/${kmom.reportNr}`);
+            const apiCall = await fetch(`https://me-api.kris3xiq-jsramverk.me/reports/week/${kmom.reportNr}`);
             const res = await apiCall.json();
             setHeader(res.header);
             setContent(res.content);
