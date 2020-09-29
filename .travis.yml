@@ -10,6 +10,11 @@ sudo: false
 git:
     submodules: false
 
+addons:
+  apt:
+    packages:
+      - google-chrome-stable
+
 before_script:
     - npm install
 
