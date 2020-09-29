@@ -28,18 +28,15 @@ cd js-backend
 
 npm install
 
-## 8: Create your own SECRET_KEY
-
-inside js-backend, create a folder called "config" and add the file "config.js". Inside the file add "const SECRET_KEY = 'YourVeryLongAndComplicatedKeyCanBeWhatever'" and then make sure to add module.exports = SECRET_KEY;
-at the bottom of the file.
-
-## 9: Go ahead and start up the backend
+## 8: Go ahead and start up the backend
 
 npm start
 
-## 10: Open your web-browser at localhost:3000
+## 9: Open your web-browser at localhost:3000
 
 https://travis-ci.org/Kris3XIQ/js-frontend.svg?branch=master
+
+[![Build Status](https://travis-ci.org/Kris3XIQ/js-frontend.svg?branch=master)](https://travis-ci.org/Kris3XIQ/js-frontend)
 
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Kris3XIQ/js-frontend/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/Kris3XIQ/js-frontend/?branch=master)
 
