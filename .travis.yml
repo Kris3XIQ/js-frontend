@@ -11,7 +11,12 @@ git:
     submodules: false
   
 addons:
-  chrome: stable
+  apt:
+    update: true
+    sources:
+      - google chrome
+    packages:
+      - google-chrome-stable
 
 before_script:
     - npm install
