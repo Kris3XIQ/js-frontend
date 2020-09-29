@@ -38,3 +38,5 @@ at the bottom of the file.
 npm start
 
 ## 10: Open your web-browser at localhost:3000
+
+https://travis-ci.org/Kris3XIQ/js-frontend.svg?branch=master

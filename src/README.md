@@ -33,3 +33,5 @@ npm install
 npm start
 
 ## 9: Open your web-browser at localhost:3000
+
+https://travis-ci.org/Kris3XIQ/js-frontend.svg?branch=master
