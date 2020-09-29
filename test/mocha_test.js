@@ -34,14 +34,16 @@ function assertH1(target) {
 
 test.describe("Me App", function() {
     test.beforeEach(function(done) {
-        this.timeout(0);
+        this.timeout(10000);
 
-        browser = new webdriver.Builder().
-        withCapabilities(webdriver.Capabilities.firefox())
-            .setFirefoxOptions(new firefox.Options().headless())
+        browser = new webdriver.Builder()
+            // withCapabilities(webdriver.Capabilities.firefox())
+            //     .setFirefoxOptions(new firefox.Options().headless())
+            //     .forBrowser("firefox")
+            //     .build();
             .forBrowser("firefox")
-            .build();
-
+            .setFirefoxOptions(new firefox.Options())
+            .build()
         browser.get("http://localhost:8082/");
         done();
     });
