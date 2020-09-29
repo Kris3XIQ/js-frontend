@@ -42,7 +42,7 @@ test.describe("Me App", function() {
             //     .forBrowser("firefox")
             //     .build();
             .forBrowser("firefox")
-            .setFirefoxOptions(new firefox.Options())
+            .setFirefoxOptions(new firefox.Options().headless())
             .build()
         browser.get("http://localhost:8082/");
         done();
