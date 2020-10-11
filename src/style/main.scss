@@ -375,3 +375,64 @@ header {
         padding: 10px;
     }
 }
+
+
+/* CHAT */
+
+.chat-wrapper {
+    background-color: #24252a;
+    height: 100vh;
+    .chat-container {
+        width: 720px;
+        margin: auto;
+        height: 600px;
+        background-color: aliceblue;
+        overflow: auto;
+        .chat-text-container {
+            padding: 5px 25px 5px 25px;
+            .chat-nick {
+                font-family: 'Varela Round';
+                font-weight: bold;
+                font-size: 14px;
+                color: #4aa047;
+                padding-right: 5px;
+            }
+            .chat-msg {
+                font-family: 'Varela Round';
+                // font-weight: bold;
+                font-size: 14px;
+            }
+            .chat-time {
+                font-family: 'Varela Round';
+                font-weight: bold;
+                font-size: 10px;
+                padding-right: 10px;
+            }
+        }
+    }
+    .message-wrapper,
+    .nick-wrapper {
+        width: 720px;
+        margin: auto;
+        padding: 25px;
+        text-align: center;
+    }
+    p {
+        font-family: 'Varela Round';
+        font-weight: bold;
+        font-size: 16px;
+        color: #fff;
+        padding-right: 5px;
+    }
+    button {
+        display: block;
+        margin: auto;
+        padding: 15px;
+        margin-top: 10px;
+        width: 50%;
+    }
+    input {
+        width: 100%;
+        height: 30px;
+    }
+}

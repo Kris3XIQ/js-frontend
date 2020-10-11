@@ -67,6 +67,9 @@ const Nav = () => {
                                 </li>
                             </ul>
                         </li>
+                        <li>
+                            <Link to="/chat" className="nav-link-item">Chat</Link>
+                        </li>
                         {typeof user === "undefined" && noActiveUser()}
                         {typeof user !== "undefined" && activeUser()}
                         {typeof user !== "undefined" && logOut()}

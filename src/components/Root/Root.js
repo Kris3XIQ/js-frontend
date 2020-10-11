@@ -7,6 +7,7 @@ import {
 
 import Home from "./Home";
 import Report from "./Report";
+import Chat from "./Chat";
 import Nav from "./Nav";
 import Register from "./Account/Register";
 import Login from "./Account/Login";
@@ -23,6 +24,7 @@ const Root = () => {
                     <Route component={Report} exact path="/reports" />
                     <Route component={Report} exact path="/reports/week" />
                     <Route component={Report} exact path="/reports/week/:reportNr" />
+                    <Route component={Chat} exact path="/chat" />
                     <Route component={Login} exact path="/account" />
                     <Route component={Register} exact path="/account/register" />
                     <Route component={Login} exact path="/account/login" />
