@@ -15,14 +15,13 @@ class Chat extends React.Component {
 
     componentDidMount() {
         this.socket.on("chat message", ({ nick, msg, now }) => {
-            console.log(this.state);
             this.setState({
                 chat: [...this.state.chat, { nick, msg, now }]
             });
         });
-        this.socket.on('disconnect', function() {
-            console.info("Disconnected");
-        });
+        // this.socket.on('disconnect', function() {
+        //     console.info("Disconnected");
+        // });
         this.beforeUnloadListener();
     }
 
