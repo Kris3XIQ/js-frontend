@@ -12,6 +12,20 @@ class Chat extends React.Component {
         this.socket = io("https://me-api.kris3xiq-jsramverk.me");
         this.joined = 0;
     }
+    fetchChat = async () => {
+        // const apiCall = await fetch(`http://localhost:3080/reports`, fetchOptions);
+        // const apiCall = await fetch(`http://localhost:3080/chat`);
+        const apiCall = await fetch(`https://me-api.kris3xiq-jsramverk.me/chat`);
+        const res = await apiCall.json();
+        for (var i = 0; i < res[0].length; i++) {
+            let nick = res[0][i].nick;
+            let msg = res[0][i].msg;
+            let now = res[0][i].now;
+            this.setState({
+                chat: [...this.state.chat, { nick, msg, now }]
+            })
+        }
+    }
 
     componentDidMount() {
         this.socket.on("chat message", ({ nick, msg, now }) => {
@@ -19,10 +33,8 @@ class Chat extends React.Component {
                 chat: [...this.state.chat, { nick, msg, now }]
             });
         });
-        // this.socket.on('disconnect', function() {
-        //     console.info("Disconnected");
-        // });
         this.beforeUnloadListener();
+        this.fetchChat();
     }
 
     componentWillUnmount(){
