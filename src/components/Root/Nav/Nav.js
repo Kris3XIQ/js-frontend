@@ -65,6 +65,9 @@ const Nav = () => {
                                 <li>
                                     <Link to="/reports/week/6">Kmom06</Link>
                                 </li>
+                                <li>
+                                    <Link to="/reports/week/10">Kmom10</Link>
+                                </li>
                             </ul>
                         </li>
                         <li>

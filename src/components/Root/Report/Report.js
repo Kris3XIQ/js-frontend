@@ -112,7 +112,7 @@ const Report = ({ match }) => {
                         placeholder="Kmom nr#"
                         onChange={({ target }) => setPath(target.value)}
                         min="1"
-                        max="6"
+                        max="10"
                         required />
                     </div>
                     <button type="submit" className="login-form-button">Post</button>
